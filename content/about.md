@@ -1,9 +1,10 @@
 ---js
 const eleventyNavigation = {
-	key: "About",
-	order: 3
-};
+ key: "عن الموقع",
+ order: 3
+}
 ---
-# About
 
-I am a person that writes stuff.
+# عن الموقع
+
+This website is about Infrastructures in the Middle-East.

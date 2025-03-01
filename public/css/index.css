@@ -60,6 +60,11 @@ body {
 	max-width: 40em;
 }
 
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
 .visually-hidden {
 	clip: rect(0 0 0 0);
@@ -162,8 +167,8 @@ pre:not([class*="language-"]) {
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-	direction: ltr;
-	text-align: left;
+	direction: rtl;
+	text-align: right;
 	white-space: pre;
 	word-spacing: normal;
 	word-break: normal;
@@ -213,7 +218,8 @@ header {
 .postlist {
 	list-style: none;
 	padding: 0;
-	padding-left: 1.5rem;
+	padding-left: 0rem;
+	padding-right: 1.5rem;
 }
 .postlist-item {
 	display: flex;
@@ -228,7 +234,8 @@ header {
 	content: "" counter(start-from, decimal-leading-zero) ". ";
 	line-height: 100%;
 	text-align: right;
-	margin-left: -1.5rem;
+	margin-left: 0rem;
+	margin-right: -1.5rem;
 }
 .postlist-date,
 .postlist-item:before {
