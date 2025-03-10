@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+  <div class="lesson-container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <div class="lesson-content">
+      {{ content | safe }}
+    </div>
+
+    {% if video %}
+      <div class="video-container">
+        <iframe width="560" height="315" src="{{ video }}" frameborder="0" allowfullscreen></iframe>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

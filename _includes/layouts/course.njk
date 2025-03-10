@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+  <div class="course-container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <div class="modules">
+      {% for module in modules %}
+        <div class="module">
+          <h2><a href="{{ module.url }}">{{ module.title }}</a></h2>
+          <p>{{ module.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

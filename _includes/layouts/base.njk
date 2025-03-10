@@ -61,9 +61,9 @@
 			</heading-anchors>
 		</main>
 
-		<footer>
-			<p><em>تم إنشاؤه بواسطة <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
-		</footer>
+{% include "footer.njk" %}
+
+
 
 		<!-- This page `{{ page.url }}` was built on {% currentBuildDate %} -->
 		<script type="module" src="{% getBundleFileUrl "js" %}"></script>

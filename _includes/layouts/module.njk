@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+  <div class="module-container">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    <ul class="lessons">
+      {% for lesson in lessons %}
+        <li>
+          <a href="{{ lesson.url }}">{{ lesson.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

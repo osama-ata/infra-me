@@ -1,5 +1,5 @@
 export default {
-	title: "InfraArabia",
+	title: "انفرا بالعربي",
 	url: "https://Infrastructures.me/",
 	language: "ar",
 	description: "Infrastructures Middle-East.",
